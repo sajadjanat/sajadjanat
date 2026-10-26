@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="./assets/orbital-banner.png" alt="Sajad Janat — Think deeply. Build useful things. Software, systems, products." width="100%" />
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/orbital-banner.png" />
+    <img src="./assets/orbital-header.svg" alt="Sajad Janat — Think deeply. Build useful things. Software, systems, products." width="100%" />
+  </picture>
 </p>
 
 <p align="center">
@@ -16,18 +19,46 @@ I build across web, desktop, and developer tooling — connecting thoughtful arc
 I care about the whole journey: understanding the problem, shaping the experience, and making the system work.
 
 <p align="center">
-  <img src="./assets/project-orbits.svg" alt="My project constellation: GitOrbit for Git workspaces, TaskOrbit for teams, Hotfi for Wi-Fi sharing, and vue-neshan-maps for Vue and Nuxt maps." width="100%" />
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/project-orbits.svg" />
+    <img src="./assets/project-orbits-animated.svg" alt="My project constellation: GitOrbit for Git workspaces, TaskOrbit for teams, Hotfi for Wi-Fi sharing, and vue-neshan-maps for Vue and Nuxt maps." width="100%" />
+  </picture>
 </p>
 
 ## A few things I've put into orbit
 
-| [GitOrbit](https://github.com/sajadjanat/gitorbit) | [TaskOrbit](https://github.com/sajadjanat/taskorbit) |
-| :--- | :--- |
-| **Your Git workspaces, in one view.** Live repository status, history graphs, diffs, commits, and sync. | **A home for team projects.** Lightweight, self-hosted project management with Persian and English support. |
-| `TypeScript` · Developer tools | `TypeScript` · `Docker` · `Tauri` |
-| [**Hotfi**](https://github.com/sajadjanat/hotfi) | [**vue-neshan-maps**](https://github.com/sajadjanat/vue-neshan-maps) |
-| **Wi-Fi sharing, simplified.** A Windows hotspot manager with QR connections, connected devices, and live traffic. | **Maps that speak your language.** Vue 3 and Nuxt 4 maps with traffic, clustering, heatmaps, and a bilingual demo. |
-| `C#` · `.NET` · `WPF` | `Vue` · `Nuxt` · `TypeScript` · [Live demo](https://sajadjanat.github.io/vue-neshan-maps/) |
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/sajadjanat/gitorbit"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/card-gitorbit-dark.svg" />
+  <img src="./assets/card-gitorbit-light.svg" alt="GitOrbit — Git workspaces, in one view. Live status, history, diffs, commits and sync. TypeScript developer tools." width="100%" />
+</picture></a>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/sajadjanat/taskorbit"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/card-taskorbit-dark.svg" />
+  <img src="./assets/card-taskorbit-light.svg" alt="TaskOrbit — A home for team projects. Self-hosted, Persian and English. TypeScript, Docker, Tauri." width="100%" />
+</picture></a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/sajadjanat/hotfi"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/card-hotfi-dark.svg" />
+  <img src="./assets/card-hotfi-light.svg" alt="Hotfi — Wi-Fi sharing, simplified. Windows hotspot, QR connections and live traffic. C#, .NET, WPF." width="100%" />
+</picture></a>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/sajadjanat/vue-neshan-maps"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/card-vue-neshan-maps-dark.svg" />
+  <img src="./assets/card-vue-neshan-maps-light.svg" alt="vue-neshan-maps — Maps that speak your language. Traffic, clustering and heatmaps for Vue and Nuxt." width="100%" />
+</picture></a>
+</td>
+</tr>
+</table>
+
+<p align="center"><a href="https://sajadjanat.github.io/vue-neshan-maps/">Try the maps demo</a> &nbsp; / &nbsp; <a href="https://github.com/sajadjanat?tab=repositories">All repositories</a></p>
 
 ### Smaller tools. Real problems.
 
@@ -39,6 +70,11 @@ I care about the whole journey: understanding the problem, shaping the experienc
 **Start with the problem. Think in systems. Pay attention to the experience.**
 
 My public work spans **TypeScript, Vue, Nuxt, PHP, Laravel, C#, .NET, Python, and Docker** — from developer workflows to desktop utilities and tools for Persian-speaking teams.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/toolbox-dark.svg" />
+  <img src="./assets/toolbox-light.svg" alt="Web: TypeScript, Vue, Nuxt. Backend: PHP, Laravel, Python. Desktop: C#, .NET, WPF, Tauri. Delivery: Docker, Git." width="100%" />
+</picture>
 
 ---
 
