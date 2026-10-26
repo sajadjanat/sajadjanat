@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="./assets/orbital-banner.png" />
-    <img src="./assets/orbital-header-v5.svg" alt="Sajad Janat — Think deeply. Build useful things. An orbiting satellite and moon, starlight and a passing meteor above a blue planet." width="100%" />
+    <img src="./assets/orbital-header.svg?v=3" alt="Sajad Janat — Think deeply. Build useful things. Software, systems, products." width="100%" />
   </picture>
 </p>
 

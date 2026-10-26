@@ -19,29 +19,13 @@ def write(name, content):
 # The original raster banner is embedded unchanged; motion is an SVG overlay.
 image = base64.b64encode((ASSETS/'orbital-banner.png').read_bytes()).decode('ascii')
 header = f'<image width="1200" height="400" preserveAspectRatio="none" xlink:href="data:image/png;base64,{image}"/>'
-flight_path = 'M 720 145 C 795 40 1050 22 1145 90 C 1240 160 1090 320 865 315 C 725 309 650 235 720 145 Z'
-header += f'''<g class="moving">
-<path d="{flight_path}" fill="none" stroke="#a9e6ff" stroke-width="1.2" opacity=".38"/>
-<path class="orbit-light" d="{flight_path}" fill="none" stroke="#c2edff" stroke-width="2" stroke-linecap="round" stroke-dasharray="110 1212" opacity=".85"/>
-<g class="satellite" transform="translate(720 145)"><g transform="scale(1.7)">
-<path d="M -31 0 H -10" stroke="url(#trail)" stroke-width="2.4" opacity=".65"/>
-<path d="M -4 -3 L 6 0 -4 3 Z" fill="#e5eff7" stroke="#a1bacc" stroke-width=".6"/>
-<path d="M -1 -10 V 10" stroke="#d3e1ef" stroke-width="1"/>
-<path d="M -9 -12 H 6 V -5 H -9 Z M -9 5 H 6 V 12 H -9 Z" fill="#245c84" stroke="#88c9ec" stroke-width=".7"/>
-<path d="M -4 -12 V -5 M 1 -12 V -5 M -4 5 V 12 M 1 5 V 12" stroke="#90c8e3" stroke-width=".45"/>
-<circle cx="6" cy="0" r="1.2" fill="#effcff"/>
-</g></g>
-<g class="moon" transform="translate(1070 86)"><circle r="10" fill="url(#moon-surface)" stroke="#c7dbea" stroke-width=".7"/><path d="M -5 -3 Q 0 -6 5 -2 M -3 4 H 3" fill="none" stroke="#546577" stroke-width="2" opacity=".65"/></g>
-<path class="limb-glow" d="M 1028 20 C 916 25 838 104 820 216" fill="none" stroke="#a4dfff" stroke-width="2" stroke-linecap="round" opacity=".35"/>
-<path class="comet" d="M 65 90 l 75 -17" stroke="url(#trail)" stroke-width="1.8" stroke-linecap="round"/>
-</g>'''
+header += '<g class="moving"><path class="comet" d="M 140 65 l 46 -9" stroke="url(#trail)" stroke-width="1.2" stroke-linecap="round"/></g>'
 rng = Random(45841783)
 for i in range(18):
     x,y = rng.randint(20,750),rng.randint(10,85)
     header += f'<circle class="spark" cx="{x}" cy="{y}" r="{rng.choice([.5,.7,1])}" fill="#c8efff" opacity=".2" style="animation-delay:-{i*.67}s"/>'
-header_css = '''.satellite{animation:flight 14s linear infinite}.moon{animation:moon-flight 22s linear infinite}.spark{animation:twinkle 6s ease-in-out infinite}.orbit-light{animation:orbit-light 12s linear infinite}.limb-glow{animation:limb 7s ease-in-out infinite}.comet{animation:comet 11s ease-in infinite}@keyframes flight{0%{transform:translate(720px,145px) rotate(-40deg)}12.5%{transform:translate(815px,70px) rotate(-18deg)}25%{transform:translate(960px,56px) rotate(8deg)}37.5%{transform:translate(1110px,95px) rotate(40deg)}50%{transform:translate(1140px,205px) rotate(110deg)}62.5%{transform:translate(1010px,290px) rotate(155deg)}75%{transform:translate(865px,315px) rotate(185deg)}87.5%{transform:translate(710px,255px) rotate(240deg)}100%{transform:translate(720px,145px) rotate(320deg)}}@keyframes moon-flight{0%,100%{transform:translate(1070px,86px)}25%{transform:translate(1140px,180px)}50%{transform:translate(1020px,320px)}75%{transform:translate(925px,170px)}}@keyframes orbit-light{to{stroke-dashoffset:-1322}}@keyframes limb{0%,100%{opacity:.12}50%{opacity:.6}}@keyframes twinkle{0%,100%{opacity:.12}50%{opacity:.7}}@keyframes comet{0%,55%{opacity:0;transform:translate(0,0)}58%{opacity:.85}76%,100%{opacity:0;transform:translate(480px,-95px)}}'''
-header_defs='<linearGradient id="trail"><stop stop-color="#9cdeff" stop-opacity="0"/><stop offset="1" stop-color="#ecfbff"/></linearGradient><radialGradient id="moon-surface" cx="28%" cy="25%"><stop stop-color="#eaf3fa"/><stop offset=".55" stop-color="#899caf"/><stop offset="1" stop-color="#182330"/></radialGradient>'
-write('orbital-header-v5.svg', svg(1200,400,'Sajad Janat — Think deeply. Build useful things.',header,header_defs,header_css))
+header_css = '''.spark{animation:twinkle 9s ease-in-out infinite}.comet{animation:comet 24s ease-in infinite}@keyframes twinkle{0%,100%{opacity:.12}50%{opacity:.55}}@keyframes comet{0%,75%{opacity:0;transform:translate(-120px,30px)}77%{opacity:.65}88%,100%{opacity:0;transform:translate(600px,-80px)}}'''
+write('orbital-header.svg', svg(1200,400,'Sajad Janat — Think deeply. Build useful things.',header,'<linearGradient id="trail"><stop stop-color="#9cdeff" stop-opacity="0"/><stop offset="1" stop-color="#ecfbff"/></linearGradient>',header_css))
 
 PROJECTS = [
     ('gitorbit','GitOrbit','Git workspaces, in one view.','Status, history, diffs, commits & sync.','TypeScript / Developer tools','#79d9ff'),
