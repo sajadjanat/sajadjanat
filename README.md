@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="./assets/orbital-banner.png" />
-    <img src="./assets/orbital-header.svg" alt="Sajad Janat — Think deeply. Build useful things. Software, systems, products." width="100%" />
+    <img src="./assets/orbital-header.svg?v=3" alt="Sajad Janat — Think deeply. Build useful things. Software, systems, products." width="100%" />
   </picture>
 </p>
 
@@ -20,8 +20,8 @@ I care about the whole journey: understanding the problem, shaping the experienc
 
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/project-orbits.svg" />
-    <img src="./assets/project-orbits-animated.svg" alt="My project constellation: GitOrbit for Git workspaces, TaskOrbit for teams, Hotfi for Wi-Fi sharing, and vue-neshan-maps for Vue and Nuxt maps." width="100%" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/project-orbits.svg?v=3" />
+    <img src="./assets/project-orbits-animated.svg?v=3" alt="My project constellation: GitOrbit for Git workspaces, TaskOrbit for teams, Hotfi for Wi-Fi sharing, and vue-neshan-maps for Vue and Nuxt maps." width="100%" />
   </picture>
 </p>
 
@@ -31,28 +31,28 @@ I care about the whole journey: understanding the problem, shaping the experienc
 <tr>
 <td width="50%" valign="top">
 <a href="https://github.com/sajadjanat/gitorbit"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/card-gitorbit-dark.svg" />
-  <img src="./assets/card-gitorbit-light.svg" alt="GitOrbit — Git workspaces, in one view. Live status, history, diffs, commits and sync. TypeScript developer tools." width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/card-gitorbit-dark.svg?v=3" />
+  <img src="./assets/card-gitorbit-light.svg?v=3" alt="GitOrbit — Git workspaces, in one view. Live status, history, diffs, commits and sync. TypeScript developer tools." width="100%" />
 </picture></a>
 </td>
 <td width="50%" valign="top">
 <a href="https://github.com/sajadjanat/taskorbit"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/card-taskorbit-dark.svg" />
-  <img src="./assets/card-taskorbit-light.svg" alt="TaskOrbit — A home for team projects. Self-hosted, Persian and English. TypeScript, Docker, Tauri." width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/card-taskorbit-dark.svg?v=3" />
+  <img src="./assets/card-taskorbit-light.svg?v=3" alt="TaskOrbit — A home for team projects. Self-hosted, Persian and English. TypeScript, Docker, Tauri." width="100%" />
 </picture></a>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 <a href="https://github.com/sajadjanat/hotfi"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/card-hotfi-dark.svg" />
-  <img src="./assets/card-hotfi-light.svg" alt="Hotfi — Wi-Fi sharing, simplified. Windows hotspot, QR connections and live traffic. C#, .NET, WPF." width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/card-hotfi-dark.svg?v=3" />
+  <img src="./assets/card-hotfi-light.svg?v=3" alt="Hotfi — Wi-Fi sharing, simplified. Windows hotspot, QR connections and live traffic. C#, .NET, WPF." width="100%" />
 </picture></a>
 </td>
 <td width="50%" valign="top">
 <a href="https://github.com/sajadjanat/vue-neshan-maps"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/card-vue-neshan-maps-dark.svg" />
-  <img src="./assets/card-vue-neshan-maps-light.svg" alt="vue-neshan-maps — Maps that speak your language. Traffic, clustering and heatmaps for Vue and Nuxt." width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/card-vue-neshan-maps-dark.svg?v=3" />
+  <img src="./assets/card-vue-neshan-maps-light.svg?v=3" alt="vue-neshan-maps — Maps that speak your language. Traffic, clustering and heatmaps for Vue and Nuxt." width="100%" />
 </picture></a>
 </td>
 </tr>
